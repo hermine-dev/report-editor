@@ -6,7 +6,7 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
+      <div class="d-flex align-center" v-if="loggedIn">
         <v-btn
           text
           to="/reports"
@@ -14,7 +14,7 @@
           <span class="mr-2">Reports</span>
         </v-btn>
       </div>
-      <div class="d-flex align-center">
+      <div class="d-flex align-center" v-if="loggedIn">
         <v-btn
           text
           to="/report-editor"
