@@ -80,7 +80,6 @@ export default {
           }
           // here we have changed this.signUpData from auth state
         }).catch((err) => {
-          console.log('err', err)
           return err.response
         })
       }

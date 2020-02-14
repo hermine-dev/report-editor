@@ -58,9 +58,7 @@ router.beforeEach((to, from, next) => {
       (async () => {
         try {
           await store.dispatch('auth/userInfo')
-        } catch (e) {
-          console.log('err', e.message)
-        }
+        } catch (e) {}
       })()
     }
     if (store.getters['auth/loggedIn']) {

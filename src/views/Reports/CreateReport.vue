@@ -70,7 +70,7 @@ export default {
           localStorage.setItem('draftReports', JSON.stringify(_draftReports))
           this.dialog = true
         })
-        .catch(console.error)
+        .catch(() => {})
     }
   }
 }

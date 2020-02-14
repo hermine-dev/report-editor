@@ -54,7 +54,7 @@ export default {
   created () {
     this.$store.dispatch('reports/list').then(() => {
       this.loading = false
-    }).catch(console.error)
+    }).catch((e) => {})
   }
 }
 </script>
